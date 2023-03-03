@@ -31,7 +31,12 @@ app.use(cors());
 
 app.use('/api/auth', authRouter);
 app.use('/api/posts', postRouter);
+app.use(express.static(__dirname));
 
-const PORT = process.env.PORT || 5000;
+app.get('/*', function (req, res) {
+    res.sendFile(path.join(__dirname, 'index.html'));
+});
+
+const PORT = process.env.PORT || 8000;
 
 app.listen(PORT, () => console.log(`Server started on PORT ${PORT}`));
