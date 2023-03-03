@@ -1,4 +1,4 @@
-export const apiUrl = process.env.NODE_ENV !== 'production' ? 'http://localhost:5000/api' : 'somedeployeURL';
+export const apiUrl = process.env.NODE_ENV !== 'production' ? 'http://localhost:5000/api' : 'https://to-learn-app.onrender.com/api';
 
 export const LOCAL_STORAGE_TOKE_NAME = 'learnit-mern'
 
