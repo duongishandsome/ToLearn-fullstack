@@ -22,7 +22,7 @@ https://super-croquembouche-b7d9e5.netlify.app/
 
 **Server:** Node, Express, mongoDB 
 
-- Có xác thực người dùng (jsonwebtokekn)
+- Có xác thực người dùng (jsonwebtoken)
 
 
 ## Note
